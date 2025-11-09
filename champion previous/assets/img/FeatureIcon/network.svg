@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 37" width="23" height="37">
+	<title>durability</title>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<path id="Layer copy" fill-rule="evenodd" class="s0" d="m13.3 16.6c-2.2 0-4.1 1.8-4.1 4v7.9h-1.6v-7.9c0-3.1 2.6-5.6 5.7-5.6h7.7v1.6z"/>
+	<path id="Layer copy 2" fill-rule="evenodd" class="s0" d="m7.3 10.6c-2.2 0-4.1 1.8-4.1 4v7.9h-1.6v-7.9c0-3.1 2.6-5.6 5.7-5.6h7.7v1.6z"/>
+	<path fill-rule="evenodd" class="s0" d="m12.9 24.7c0-1.8 1.5-3.3 3.4-3.3h11.8c1.8 0 3.3 1.5 3.3 3.3v26.9c0 1.9-1.5 3.4-3.3 3.4h-11.8c-1.9 0-3.4-1.5-3.4-3.4zm3.4-1.6c-0.9 0-1.7 0.7-1.7 1.6v26.9c0 1 0.8 1.7 1.7 1.7h11.8c0.9 0 1.7-0.7 1.7-1.7v-26.9c0-0.9-0.8-1.6-1.7-1.6z"/>
+</svg>

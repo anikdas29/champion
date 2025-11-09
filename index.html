@@ -1,0 +1,1253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- swiper.min.css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- #tailwindcss -->
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="assets/css/output.css" />
+
+    <!-- swiper-bundle.min.js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+	--gray-700: #424242;
+	--gray-500: #737373;
+	--black: black;
+	--border-radius--tiny: .375rem;
+	--light-grey: #f4f4f4;
+	--border-radius--xtiny: .25rem;
+	--gray-800: #292929;
+	--gray-25: #fcfcfc;
+	--gray-400: #a3a3a3;
+	--gray-50: #fafafa;
+	--gray-900: #141414;
+	--dark-green: #25fabe;
+	--green: #61ffc9;
+	--nav--gray-800: #292929;
+	--nav--gray-50: #fafafa;
+	--gray-600: #525252;
+	--white: white;
+	--border-radius--xxsmall: .5rem;
+	--gray-300: #d6d6d6;
+	--gray-200: #e5e5e5;
+	--gray-100: whitesmoke;
+	--border-radius--xlarge: 2rem;
+	--border-radius--xxtiny: .175rem;
+	--border-radius--large-still: 1.75rem;
+	--border-radius--0: 0rem;
+	--border-radius--medium: 1.25rem;
+	--border-radius--large-change: 1.75rem;
+	--border-radius--xmedium: 1.5rem;
+	--border-radius--xsmall: .75rem;
+	--border-radius--small: 1rem;
+	--border-radius--home-hero: 2rem;
+	--nav--gray-700: #424242;
+	--border-radius--about-image: 2rem;
+	--border-radius--button-circle: 100vw;
+	--nav--circle: #292929;
+	--nav--y: #61ffc9;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+/*   overflow: hidden; */
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
+/*   scroll-behavior: smooth; */
+}
+
+body {
+	margin: 0;
+	height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.intro-wrapper {
+  position: relative;
+  height: 90vh;
+  background-color: #f8f8f8;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.text-align-center {
+  max-width: 600px;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+}
+.text-align-center {
+	text-align: center;
+  scroll-behavior: smooth;
+  height: 100%;
+  will-change: transform, opacity;
+}
+
+.align-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.max-width-small {
+	width: 100%;
+	max-width: 30rem;
+}
+
+.margin-small {
+	margin: 3.5rem;
+	margin-bottom: 0;
+}
+
+.heading-style-h3 {
+	letter-spacing: -.02em;
+	font-size: 2.8125rem;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.light-green-underline {
+	box-shadow: none;
+	display: inline-block;
+}
+
+p {
+	color: var(--gray-500);
+	margin-bottom: 5rem;
+}
+
+.text-size-medium {
+	font-size: 1.125rem;
+}
+
+sup {
+	top: 0em;
+}
+
+sub,
+sup {
+	vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+}
+
+.section_tabs {
+	z-index: 99;
+	border-radius: var(--border-radius--xlarge);
+	background-color: var(--gray-800);
+	position: relative;
+}
+
+.padding-section-large {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+	position: relative;
+}
+@media(max-width: 576px) {
+  .padding-section-large {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+}
+
+.tabs_height {
+	height: 550vh;
+}
+@media(max-width: 576px) {
+  .tabs_height {
+    height: 600vh;
+  }
+}
+
+.tabs_sticky-wrapper {
+	height: 100vh;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 5vh;
+}
+
+.tabs_container {
+	width: 100%;
+	max-width: 120rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tabs_component {
+	height: 90vh;
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 1.5rem;
+	grid-template-rows: auto;
+	grid-template-columns: .4fr 1fr;
+	grid-auto-columns: 1fr;
+	padding-left: 3.3%;
+	padding-right: 3.3%;
+	display: grid;
+}
+@media(max-width: 576px) {
+  .tabs_component {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tabs_left {
+	border-radius: var(--border-radius--medium);
+	background-color: var(--gray-700);
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: stretch;
+	padding: 1.5rem;
+	display: flex;
+}
+
+.tabs_left-top {
+	height: 100%;
+	position: relative;
+}
+
+.tabs_let-content {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	display: flex;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.tabs_let-content.is-1 {
+	opacity: 1;
+}
+
+.heading-style-h4 {
+	letter-spacing: -.02em;
+	font-size: 2.125rem;
+	font-weight: 500;
+	line-height: 1.05;
+}
+@media(max-width: 576px) {
+  .heading-style-h4 {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
+.text-color-gray100 {
+	color: var(--gray-100);
+}
+
+.tabs_line {
+	width: 100%;
+	height: 1px;
+	background-color: var(--gray-500);
+}
+
+.text-color-gray400 {
+	color: var(--gray-400);
+}
+
+.text-size-small {
+	font-size: 1rem;
+}
+@media(max-width: 576px) {
+  .text-size-small {
+    font-size: .875rem;
+  }
+}
+
+.tabs_left-bottom {
+	flex-direction: column;
+	display: flex;
+}
+
+.button {
+	grid-column-gap: .5rem;
+	grid-row-gap: .5rem;
+	border: 1px solid var(--gray-800);
+	background-color: var(--gray-800);
+	color: var(--gray-25);
+	text-align: center;
+	letter-spacing: .03em;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: .6rem;
+	justify-content: center;
+	align-items: center;
+	padding: .6rem 1.35rem;
+	font-size: .875rem;
+	text-decoration: none;
+	transition: color .6s;
+	display: flex;
+	overflow: hidden;
+}
+
+.tabs_video,
+.tabs_right,
+.button {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+.button.is-green {
+	border-color: var(--green);
+	background-color: var(--green);
+	color: var(--gray-900);
+}
+
+.button.is-secondary {
+	color: var(--gray-900);
+	background-color: transparent;
+	transition: border-color .6s, color .6s;
+}
+
+.button.is-green.is-secondary {
+	color: var(--gray-25);
+	background-color: rgba(97, 255, 201, 0);
+}
+
+.button-text {
+	z-index: 2;
+	position: relative;
+}
+
+.button-circle-wrapper {
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius: 100vw;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+}
+
+.button-icon {
+	z-index: 2;
+	width: 1rem;
+	height: 1rem;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: absolute;
+}
+
+.button-circlee {
+  color: var(--white);
+	width: 80%;
+	aspect-ratio: 1 / 1;
+	border-radius: var(--border-radius--button-circle);
+	position: absolute;
+	top: 0;
+  transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    height: 250px;
+    transition: all .2s ease-in-out;
+    will-change: transform, width, height, color;
+    border: 1px solid transparent;
+}
+.button.is-green.is-secondary:hover {
+  color: var(--gray-800);
+  border-color: var(--green);
+}
+.button.is-green.is-secondary:hover .button-circlee {
+	
+	background-color: var(--green);
+  transform: translate3d(0px, -43%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  width: 100%;
+}
+
+.tabs_right {
+	width: 100%;
+	height: 100%;
+	border-radius: var(--border-radius--medium);
+	position: relative;
+	overflow: hidden;
+	grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+.w-background-video {
+	height: 500px;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.tabs_video {
+	width: 100%;
+	height: 100%;
+	border-radius: var(--border-radius--medium);
+	object-fit: cover;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.tabs_video.is-1 {
+	opacity: 1;
+}
+
+audio,
+canvas,
+progress,
+video {
+	vertical-align: baseline;
+	display: inline-block;
+}
+
+.w-background-video>video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -100;
+	background-position: 50%;
+	background-size: cover;
+	margin: auto;
+	position: absolute;
+	top: -100%;
+	bottom: -100%;
+	left: -100%;
+	right: -100%;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.tabs_video-gda-badge {
+	width: 5rem;
+	margin-bottom: 1.5rem;
+	object-fit: cover;
+	position: relative;
+	z-index: 2;
+	margin-top: 2rem;
+	margin-right: 2rem;
+
+}
+
+.w-background-video {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.video-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.tabs_video {
+	width: 100%;
+	height: 100%;
+	border-radius: var(--border-radius--medium);
+	object-fit: cover;
+	position: absolute;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+.tabs_video.is-1 {
+	opacity: 1;
+	transform: translateY(0);
+}
+    </style>
+<style>
+
+  html, body {
+    width: 100%;
+    background: #000;
+    font-family: system-ui, sans-serif;
+  }
+
+  .video-section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .scroll-video {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .page-content {
+    color: white;
+    padding: 3rem;
+    background: #111;
+  }
+  
+  
+  .tabs_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius--medium);
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.tabs_main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position:top;
+  border-radius: var(--border-radius--medium);
+}
+
+  
+  @media (min-width: 1000px) {
+      .tabs_left{
+        height: 500px;
+      }
+}
+
+
+</style>
+  </head>
+
+
+ <body>
+     <section class="video-section">
+  <video
+    id="bgVideo"
+    class="scroll-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+  ></video>
+</section>
+
+  
+  
+    <!-- hero_area -->
+    <section
+      class="hero_area responsive-bg overflow-hidden pt-[350px] pb-[80px] text-white md:pt-[110px] md:pb-[80px] lg:min-h-[100vh] lg:pt-[370px] lg:pb-[100px] xl:pb-[70px]" style="display:none" 
+    >
+      <div class="containerC">
+        <div
+          class="left-hero mx-auto min-h-[174px] max-w-[465px] text-center md:mx-0"
+        >
+          <h1
+            class="max text-[25px] font-bold text-white md:text-[34px] lg:text-[49px]"
+          >
+            PTZ Bulb Camera
+          </h1>
+
+          <div class="hero_img flex justify-center">
+            <img
+              class="w-32 lg:w-[236px]"
+              src="assets/img/brand.png"
+              alt=""
+            />
+          </div>
+
+          <p class="mt-[20px] leading-[22px] font-light">
+            Champion Double Lens PTZ Bulb IP Camera – now just ৳2,090 in BD! Get 1080P HD clarity, built-in WiFi, night vision, and 360° coverage. Secure your home or office with smart surveillance technology.
+          </p>
+
+          <button
+            class="mt-4 inline-flex rounded-[20px] bg-[#2c69e2] px-[23px] py-2 text-sm font-bold"
+          >
+            Buy now
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section_tabs" style="z-index: 2;">
+       <div class="padding-section-large">
+          <div class="tabs_height">
+             <div class="tabs_sticky-wrapper">
+                <div class="tabs_container">
+                   <div class="tabs_component">
+                      <div class="tabs_left">
+                         <div class="tabs_left-top">
+                            <div class="tabs_let-content is-1">
+                               <h2 class="heading-style-h4 text-color-gray100">Champion Thermal Label & Receipt POS Printer HL80B</h2>
+                               <div class="tabs_line"></div>
+                               <p class="text-size-small text-color-gray400">In the ever-evolving world of Point of Sale (POS) systems, the Champion POS-HL80B stands as a pinnacle of innovation, providing businesses with a robust tool to enhance efficiency and customer satisfaction. Developed by the esteemed brand Champion, the POS-HL80B combines cutting-edge technology with a commitment to reliability, making it a versatile solution for various retail and hospitality environments.</p>
+                            </div>
+                            <div class="tabs_let-content is-1">
+                               <h2 class="heading-style-h4 text-color-gray100">Champion 24G+2G POE and 8G+2G POE Gigabit Switch</h2>
+                               <div class="tabs_line"></div>
+                               <p class="text-size-small text-color-gray400">In the ever-evolving landscape of networking solutions, the CP-PGE208N emerges as a standout performer, redefining the standards of connectivity and power distribution. This 8-port Power Over Ethernet switch is engineered to cater to the demands of modern network environments, providing a perfect blend of efficiency and scalability.</p>
+                            </div>
+                            <div class="tabs_let-content is-1">
+                               <h2 class="heading-style-h4 text-color-gray100">Champion 3 Lens 3 Screens 4G Security Outdoor waterproof Camera.</h2>
+                               <div class="tabs_line"></div>
+                               <p class="text-size-small text-color-gray400">Introducing our high-resolution 3MP WiFi IP Camera, delivering superior 1080P HD images for comprehensive surveillance. Seamlessly connect to your own WiFi system with the added flexibility of a LAN port for stable connectivity. The camera supports memory cards up to 128GB (purchased separately), providing ample space for video storage.</p>
+                            </div>
+                            <div class="tabs_let-content is-1">
+                               <h2 class="heading-style-h4 text-color-gray100"> V380 Pro Champion Dual Lens PTZ Outdoor Wifi IP Camera</h2>
+                               <div class="tabs_line"></div>
+                               <p class="text-size-small text-color-gray400">WHigh-performance 3-lens security camera with 3+3+3 MP resolution and 1080P HD clarity. Features 360° coverage, night vision, human motion & face detection, two-way audio, and built-in siren. Supports mobile, computer, and tablet access via V380/V380Pro apps. Weatherproof, with LAN/WiFi/4G options and expandable memory up to 128GB.</p>
+                            </div>
+                         </div>
+                         <div class="tabs_left-bottom" style="display:none">
+                            <div class="button is-green is-secondary">
+                               <div class="button-text">Order today</div>
+                               <div class="button-circle-wrapper">
+                                  <div class="button-icon _1 w-embed">
+                                     <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.66699 11.3332L11.3337 4.6665" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M4.66699 4.6665H11.3337V11.3332" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                     </svg>
+                                  </div>
+                                  <div class="button-icon _2 w-embed">
+                                     <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.66699 11.3332L11.3337 4.6665" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M4.66699 4.6665H11.3337V11.3332" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                     </svg>
+                                  </div>
+                               </div>
+                               <div class="button-circlee background-color-green"></div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="tabs_right">
+                         <div class="tabs_video is-1 w-background-video w-background-video-atom" style="display: flex; justify-content: flex-end; align-items: flex-start;">
+                            <div class="tabs_image is-1">
+                            <img src="https://champion.com.bd/img/1.png" alt="Champion Product" class="tabs_main-image">
+                          </div>
+                         </div>
+                         <div class="tabs_video w-background-video w-background-video-atom">
+                            <div class="tabs_image is-1">
+                            <img src="https://champion.com.bd/img/2.png" alt="Champion Product" class="tabs_main-image">
+                          </div>
+                         </div>
+                         <div class="tabs_video w-background-video w-background-video-atom">
+                            <div class="tabs_image is-1">
+                            <img src="https://champion.com.bd/img/3.png" alt="Champion Product" class="tabs_main-image">
+                          </div>
+                         </div>
+                         <div class="tabs_video w-background-video w-background-video-atom">
+                            <div class="tabs_image is-1">
+                            <img src="https://champion.com.bd/img/4.png" alt="Champion Product" class="tabs_main-image">
+                          </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+
+    <!-- top_features -->
+    <section
+      class="top_features xsm:py-[50px] bg-black py-6 text-white md:py-[70px] lg:py-[100px]"
+    >
+      <div class="container988">
+        <h2 class="text- text-3xl font-bold md:text-[40px] lg:mb-16">
+          Top features
+        </h2>
+        <!-- Swiper -->
+        <div
+          class="swiper top_features_swiper feature_swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+        >
+          <div
+            class="swiper-wrapper"
+            id="swiper-wrapper-f715d59d67b0f94c"
+            aria-live="polite"
+          >
+            <!-- Slide 1: Camera -->
+            <div
+              class="swiper-slide swiper-slide-active swiper-slide-style"
+              role="group"
+              aria-label="1 / 5"
+              style="width: 269px; margin-right: 10px"
+            >
+              <div
+                class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
+              >
+                <img src="assets/img/FeatureIcon/camera.svg" alt="" />
+
+                <h4 class="mb-2 text-[14px] font-medium text-[#a9a6a1]">
+                  Camera
+                </h4>
+                <h2 class="mb-4 text-[18px] font-bold">
+                  360°coverage with <br>double lens 4:3 inches
+                </h2>
+
+                <p>
+                  2MP  Camera<br />
+                  1080P Image Resolution<br />
+                </p>
+              </div>
+            </div>
+            
+
+            <!-- Slide 3: Battery -->
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="3 / 5"
+              style="width: 269px; margin-right: 10px"
+            >
+              <div
+                class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
+              >
+                <img src="assets/img/FeatureIcon/speaker.svg" alt="" />
+                <h4 class="mb-2 text-[14px] font-medium text-[#a9a6a1]">
+                  Audio
+                </h4>
+                <h2 class="mb-4 text-[18px] font-bold">
+                  Two-way audio<br />Speaking and Listening
+                </h2>
+                <p>Built-In<br />Real-time communication support</p>
+              </div>
+            </div>
+
+            <!-- Slide 4: Durability -->
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="4 / 5"
+              style="width: 269px; margin-right: 10px"
+            >
+              <div
+                class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
+              >
+                <img src="assets/img/FeatureIcon/network.svg" alt="" />
+                <h4 class="mb-2 text-[14px] font-medium text-[#a9a6a1]">
+                  Durability
+                </h4>
+                <h2 class="mb-4 text-[18px] font-bold">
+                  Looks sleek, built tough,<br />dust resistant
+                </h2>
+                <p>plastic frame<br />semi water resistant</p>
+              </div>
+            </div>
+
+            <!-- Slide 5: Storage -->
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="5 / 5"
+              style="width: 269px; margin-right: 10px"
+            >
+              <div
+                class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
+              >
+                <img src="assets/img/FeatureIcon/storage.svg" alt="" />
+                <h4 class="mb-2 text-[14px] font-medium text-[#a9a6a1]">
+                  Storage
+                </h4>
+                <h2 class="mb-4 text-[18px] font-bold">
+                  Plenty of space to store it<br />
+                  all and more
+                </h2>
+                <p>
+                  16GB | 32GB | 64GB storage <br />purchased separately
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-scrollbar swiper-scrollbar-horizontal mt-20">
+            <div
+              class="swiper-scrollbar-drag"
+              style="transform: translate3d(0px, 0px, 0px); width: 51.2751px"
+            ></div>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- #energyScore_section -->
+    <section
+      class="energy_score_section bg-black pt-10 pb-6 text-white md:py-[80px] lg:py-[100px]"
+    >
+      <div
+        class="container988 flex flex-col items-center justify-between gap-12 lg:flex-row"
+      >
+        <!-- #LeftEnergy -->
+        <div class="energy_score_content max-w-[482px]">
+          <h3
+            class="mb-2 text-sm font-medium tracking-[.11em] uppercase md:text-[18px]"
+          >
+            Secure label
+          </h3>
+
+          <h2
+            class="mb-2 text-2xl font-bold md:mb-5 md:text-4xl lg:mb-[33px] lg:text-5xl lg:leading-[56px]"
+          >
+            Buy your own personal security coach
+          </h2>
+
+          <p class="xsm:text-lg leading-[27.9px]">
+            Connect seamlessly to your phone or tablet via built-in WiFi and monitor your space in 360° clarity. Experience 1080P HD resolution, two-way audio, and night vision — all from the compact Champion PTZ Bulb Camera.
+          </p>
+
+          <div
+            class="samsung_health_link mt-3 flex items-center gap-3 text-white md:mt-5 lg:mt-[42px]"
+          >
+            <img
+              class="w-[50px] md:w-[65px] lg:w-[80px]"
+              src="assets/img/v380_icon.webp"
+              alt="v380 pro"
+            />
+
+            <div class="learn_more_link">
+              <a
+                href="#"
+                class="text-xl leading-6 font-semibold text-white hover:text-[#2c69e2]"
+              >
+                V380 Pro App
+                <span class="block text-lg underline underline-offset-4"
+                  >Learn more
+
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- #RightEnergy  -->
+        <div class="energy_score_img">
+          <img src="assets/img/energy_score.png" alt="Energy Score" />
+        </div>
+      </div>
+    </section>
+
+    <!-- #looks_Sleek section -->
+    <section
+      class="looks_sleek_section xsm:py-10 bg-black py-5 text-white md:py-[80px] lg:py-[100px]"
+    >
+      <div class="container988">
+        <!-- Header -->
+        <h2
+          class="xsm:text-3xl mx-auto text-2xl font-bold md:text-center md:text-4xl lg:mb-10 lg:text-5xl lg:leading-[56px]"
+        >
+          Looks sleek.<br />Built tough.
+        </h2>
+        <div
+          class="looks_contetn_wrapper flex flex-col items-center gap-12 overflow-hidden rounded-[20px] border border-[#555] md:flex-row"
+        >
+          <!-- #LeftLooks -->
+          <div class="looks_sleek_img hidden md:block md:w-1/2">
+            <img src="assets/img/ptz_bulb/features.png" alt="Looks Sleek" />
+          </div>
+          <!-- #Rightlooks  -->
+          <div
+            class="looks_sleek_content xsm:px-4 w-full px-3 md:w-1/2 md:pr-9"
+          >
+            <div class="accordion">
+              <div class="accordion-item border-b border-[#aaaaaa]">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button flex w-full cursor-pointer items-center justify-between py-[20px] text-white md:font-bold lg:text-xl"
+                    type="button"
+                  >
+                    Dual-Lens Power with 360° Coverage.
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                </h3>
+                <div class="accordion-body">
+                  <!-- Mobile image inside accordion -->
+                  <img
+                    class="md:hidden"
+                    src="assets/img/ptz_bulb/features2.png"
+                    alt="Galaxy S25 Ultra titanium frame"
+                  />
+                  <p>
+                    Capture every angle without missing a single corner. The innovative double lens ensures wide-area surveillance with smooth PTZ motion for full room coverage.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item border-b border-[#aaaaaa]">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button flex w-full cursor-pointer items-center justify-between py-[20px] text-white md:font-bold lg:text-xl"
+                    type="button"
+                  >
+                    Crystal-clear 1080P HD Vision.
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                </h3>
+                <div class="accordion-body">
+                  <!-- Mobile image inside accordion -->
+                  <img
+                    class="md:hidden"
+                    src="assets/img/ptz_bulb/features3.png"
+                    alt="Galaxy S25 Ultra titanium frame"
+                  />
+                  <p>
+                    Experience superior clarity with 2MP full HD resolution. Whether it’s day or night, your footage remains sharp and detailed — every face, every moment.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button flex w-full cursor-pointer items-center justify-between py-[20px] text-white md:font-bold lg:text-xl"
+                    type="button"
+                  >
+                    Water and dust resistance
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                </h3>
+                <div class="accordion-body">
+                  <!-- Mobile image inside accordion -->
+                  <img
+                    class="md:hidden"
+                    src="assets/img/looks_mobile_accordian_3.jpg"
+                    alt="Galaxy S25 Ultra titanium frame"
+                  />
+                  <p>
+                    Made to survive dust, wind, and rain. With IP68-style resistance, it’s ready to handle tough weather and dusty environments — indoor or outdoor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- #faq_sec section -->
+    <section class="faq_sec bg-black py-10 text-white md:py-16 lg:py-24">
+      <div class="container988">
+        <h2 class="mb-8 text-3xl md:mb-12 md:text-[38px]">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="accordion">
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item border-y border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                What is the resolution of the camera?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  The camera features a 2 Megapixel resolution, delivering 1080P HD quality video.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                Does the camera support night vision?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Yes, it has built-in night vision for 24/7 monitoring.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                Is this a WiFi-enabled camera?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Yes, it operates via a WiFi system and includes its own WiFi capability—no additional networking devices needed.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                Does the camera support two-way audio?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  Yes, it includes a built-in speaker and microphone for both speaking and listening.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                What is the coverage area of this camera?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  It has a 360-degree double lens design, ensuring full-area coverage with minimal blind spots.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                What are the camera dimensions?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  It measures approximately 4 inches in height and 3 inches in width.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div class="accordion-item border-b border-[#444]">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button cursor-pointe bsm:text-lg flex w-full items-start justify-between gap-2 py-[20px] text-left text-[15px] sm:items-center"
+                type="button"
+              >
+                Where are these cameras imported from?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </h3>
+            <div class="accordion-body">
+              <div class="pb-6">
+                <p class="text-base text-[#dadada] md:text-lg">
+                  All Champion WiFi IP Cameras are directly imported from China.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- lifeOpens_sec section -->
+    <section class="lifeOpens_sec bg-black py-10 md:py-16 lg:py-24 ">
+      <div class="container988">
+        <!-- Product Cards Row -->
+        <div
+          class="product_cards bsm:grid-cols-2 grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6"
+        >
+          <div
+            class="product_card card_1 min-h-[360px] overflow-hidden rounded-[20px] px-6 pt-8 pb-4"
+            style="
+              background-image: url(https://champion.com.bd/img/6.png?imbypass=true);
+            "
+          >
+            <h3 class="text-2xl font-bold text-white lg:text-3xl">
+              Two Mega Pixel Full HD 1080P Web Camera
+            </h3>
+
+          </div>
+
+          <!-- Card 2: Galaxy S25 Ultra for Business -->
+          <div
+            class="product_card relative overflow-hidden rounded-[20px] bg-[#4A4A4A] px-6 pt-8 pb-4"
+            style="
+              background-image: url(https://champion.com.bd/img/7.png?w=1276&amp;ssl=1);
+            "
+          >
+            <div class="card_content">
+              <h3 class="text-2xl font-bold text-white lg:text-3xl">
+                V380 Pro Night Vision C10 Dual-Lens Wi-Fi IP Camera
+              </h3>
+
+              
+            </div>
+          </div>
+
+          <div
+            class="product_card bsm:col-span-2 relative overflow-hidden rounded-[20px] bg-[#A8C5F3] px-6 pt-8 pb-4 md:col-span-1"
+            style="
+              background-image: url(https://champion.com.bd/img/8.png?resize=1140%2C570&amp;ssl=1);
+            "
+          >
+            <div class="card_content">
+              <h3 class="text-2xl font-bold text-white lg:text-3xl">
+                Champion USB Platform Barcode Scanner E9005
+              </h3>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- LifeOpens #BottomCard Section -->
+        <div
+  class="product_card relative overflow-hidden rounded-[20px] px-6 pt-8 pb-4"
+  style="background-color: #4A4A4A;"
+>
+  <!-- Video Background -->
+  <video
+    class="absolute top-0 left-0 w-full h-full object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source src="https://champion.com.bd/img/champion.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Card Content -->
+  <div class="card_content relative z-10">
+    <h3 class="text-2xl font-bold text-white lg:text-3xl">
+      V380 Pro Night Vision C10 Dual-Lens Wi-Fi IP Camera
+    </h3>
+  </div>
+</div>
+
+      </div>
+    </section>
+    
+      <script>
+  const video = document.getElementById("bgVideo");
+
+  const isDesktop = window.innerWidth >= 1000;
+  const webVideo = "champion.com.bd-web.mp4";      // 1920x1080
+  const mobileVideo = "champion.com.bd-mobile.mp4"; // 1080x1920
+
+  video.src = isDesktop ? webVideo : mobileVideo;
+
+  video.muted = true;
+  video.play().catch(() => {
+    video.setAttribute("muted", "");
+    video.play().catch(()=>{});
+  });
+</script>
+
+
+<!-- GSAP core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- ScrollTrigger plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+// Pin the intro text section
+ScrollTrigger.create({
+  trigger: ".intro-wrapper",
+  start: "top top",
+  end: "bottom top",
+  pin: ".text-align-center",
+  pinSpacing: false
+});
+
+// Handling the scroll for the tabs
+document.addEventListener("scroll", function () {
+  let scrollPosition = window.scrollY;
+  let windowHeight = window.innerHeight + 550; // +550 = increasing the scroll distance before each class changes
+  let sections = document.querySelectorAll('.tabs_let-content');
+  let videos = document.querySelectorAll('.tabs_video');
+  let lastSectionIndex = sections.length - 1;
+
+  sections.forEach((section, index) => {
+    if (scrollPosition >= (index * windowHeight) && scrollPosition < ((index + 1) * windowHeight)) {
+      section.classList.add('is-1');
+      videos[index].classList.add('is-1');
+    } else {
+      // Remove is-1 class from all sections except the last one
+      if (index !== lastSectionIndex) {
+        section.classList.remove('is-1');
+        videos[index].classList.remove('is-1');
+      }
+    }
+  });
+
+  // Keep is-1 class on the last section until user scrolls past it
+  if (scrollPosition > (lastSectionIndex * windowHeight)) {
+    sections[lastSectionIndex].classList.add('is-1');
+    videos[lastSectionIndex].classList.add('is-1');
+  } else {
+    sections[lastSectionIndex].classList.remove('is-1');
+    videos[lastSectionIndex].classList.remove('is-1');
+  }
+});
+</script>
+  </body>
+
+
+
+</html>

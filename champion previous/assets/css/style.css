@@ -1,0 +1,53 @@
+/* Fix for swiper-slide to preserve flex display */
+.swiper-slide.flex {
+  display: flex !important;
+}
+.switch_carousel .swiper-button-next,.switch_carousel .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  right: 38px;
+  border: 2px solid #1d1d1d;
+  margin-top: 8px;
+}
+.switch_carousel .swiper-button-next:after,.switch_carousel .swiper-button-prev:after {
+    transform: scale(0.34) translateX(5px);
+}
+
+
+
+.switch_carousel .swiper-button-prev {
+    right: 0;
+    left: 38px;
+}
+.sw_btn.swiper-button-prev::after {
+    transform: scale(.34) translateX(-5px);
+}
+
+
+@media screen and (min-width: 640px) {
+  /* Hide navigation buttons by default (for desktop)  Will be shown via JavaScript for mobile */
+  .sw_btn {
+    display: none !important; 
+  }
+}
+@media screen and (max-width: 767px) {
+  .container988 {
+    width: 86%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .switch_card {
+    min-height:380px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .switch_card {
+    min-height:400px;
+  }
+
+}
+

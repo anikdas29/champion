@@ -11,6 +11,7 @@
     />
     <!-- swiper.min.css -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- style.css -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -540,22 +541,25 @@ img {
 }
 
 
+.space-y-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+} 
+
+
 </style>
   </head>
 
 
  <body>
+    <!-- <section class="banner-section">
+      <img src="champion-desktop.jpg" class="banner-image" alt="Banner Image">
+    </section> -->
+
      <section class="video-section">
-  <video
-    id="bgVideo"
-    class="scroll-video"
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="auto"
-  ></video>
-</section>
+        <video id="bgVideo" class="scroll-video" autoplay muted loop playsinline preload="auto"></video>
+    </section>
 
   
   
@@ -600,7 +604,7 @@ img {
              <div class="tabs_sticky-wrapper">
                 <div class="tabs_container">
                    <div class="tabs_component">
-                      <div class="tabs_left">
+                      <div class="tabs_left" >
                          <div class="tabs_left-top">
                             <div class="tabs_let-content is-1">
                                <h2 class="heading-style-h4 text-color-gray100">Champion Thermal Label & Receipt POS Printer HL80B</h2>
@@ -618,14 +622,14 @@ img {
                                <p class="text-size-small text-color-gray400">This 3MP 1080p HD WiFi IP Camera delivers clear day-night monitoring with waterproof protection and 180° robotic coverage. It supports two-way audio, V380/V380 Pro apps, and works with mobile, computer, laptop, and tablets. Store recordings on a microSD card up to 128GB. Ideal for home and office security, with optional installation service available within Dhaka. Imported directly from China for the best quality.</p>
                             </div>
                             <div class="tabs_let-content is-1">
-                               <h2 class="heading-style-h4 text-color-gray100"> V380 Pro Champion Dual Lens PTZ Outdoor Wifi IP Camera</h2>
+                               <h2 class="heading-style-h4 text-color-gray100"> Champion 3 Lens 3 Screens WiFi Security Outdoor waterproof Camera.</h2>
                                <div class="tabs_line"></div>
                                <p class="text-size-small text-color-gray400">WHigh-performance 3-lens security camera with 3+3+3 MP resolution and 1080P HD clarity. Features 360° coverage, night vision, human motion & face detection, two-way audio, and built-in siren. Supports mobile, computer, and tablet access via V380/V380Pro apps. Weatherproof, with LAN/WiFi/4G options and expandable memory up to 128GB.</p>
                             </div>
                          </div>
-                         <div class="tabs_left-bottom" style="display:none">
+                         <div class="tabs_left-bottom">
                             <div class="button is-green is-secondary">
-                               <div class="button-text">Order today</div>
+                               <div class="button-text">View Details</div>
                                <div class="button-circle-wrapper">
                                   <div class="button-icon _1 w-embed">
                                      <svg height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -674,7 +678,7 @@ img {
     </section>
 
     <!-- top_features -->
-    <section
+    <section style="display: none;"
       class="top_features xsm:py-[50px] bg-black py-6 text-white md:py-[70px] lg:py-[100px]"
     >
       <div class="container988">
@@ -695,7 +699,7 @@ img {
               class="swiper-slide swiper-slide-active swiper-slide-style"
               role="group"
               aria-label="1 / 5"
-              style="width: 269px; margin-right: 10px"
+              style="width: 269px; margin-right: 10px; border-radius: 20px;"
             >
               <div
                 class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
@@ -722,7 +726,7 @@ img {
               class="swiper-slide"
               role="group"
               aria-label="3 / 5"
-              style="width: 269px; margin-right: 10px"
+              style="width: 269px; margin-right: 10px; border-radius: 20px;"
             >
               <div
                 class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
@@ -734,7 +738,7 @@ img {
                 <h2 class="mb-4 text-[18px] font-bold">
                   Two-way audio<br />Speaking and Listening
                 </h2>
-                <p>Built-In<br />Real-time communication support</p>
+                <p>Built-In<br />Real-time communication</p>
               </div>
             </div>
 
@@ -743,7 +747,7 @@ img {
               class="swiper-slide"
               role="group"
               aria-label="4 / 5"
-              style="width: 269px; margin-right: 10px"
+              style="width: 269px; margin-right: 10px; border-radius: 20px;"
             >
               <div
                 class="feature-card flex cursor-pointer flex-col items-center justify-center gap-[30px] rounded-[20px] bg-[#111213] px-[12px] py-[30px] text-center text-white"
@@ -950,6 +954,129 @@ img {
       </div>
     </section>
 
+        <!-- lifeOpens_sec section -->
+    <section class="lifeOpens_sec bg-black py-10 md:py-16 lg:py-24 ">
+      <div class="container988">
+        <!-- Product Cards Row -->
+        <div
+          class="product_cards bsm:grid-cols-2 grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6"
+        >
+          <div
+            class="product_card card_1 min-h-[360px] overflow-hidden rounded-[20px] px-6 pt-8 pb-4"
+            style="
+              background-image: url(https://champion.com.bd/img/6.png?imbypass=true);
+            "
+          >
+            <h3 class="text-2xl font-bold text-white lg:text-3xl">
+              Two Mega Pixel Full HD 1080P Web Camera
+            </h3>
+
+          </div>
+
+          <!-- Card 2: Galaxy S25 Ultra for Business -->
+          <div 
+            class="product_card relative overflow-hidden rounded-[20px] bg-[#4A4A4A] px-6 pt-8 pb-4"
+            style="
+              background-image: url(https://champion.com.bd/img/7.png?w=1276&amp;ssl=1);
+            "
+          >
+            <div class="card_content">
+              <h3 class="text-2xl font-bold text-white lg:text-3xl">
+                V380 Pro Night Vision C10 Dual-Lens Wi-Fi IP Camera
+              </h3>
+
+              
+            </div>
+          </div>
+
+          <div
+            class="product_card bsm:col-span-2 relative overflow-hidden rounded-[20px] bg-[#A8C5F3] px-6 pt-8 pb-4 md:col-span-1"
+            style="
+              background-image: url(https://champion.com.bd/img/8.png?resize=1140%2C570&amp;ssl=1);
+            "
+          >
+            <div class="card_content">
+              <h3 class="text-2xl font-bold text-white lg:text-3xl">
+                Champion USB Platform Barcode Scanner E9005
+              </h3>
+
+            </div>
+
+          </div>
+
+
+
+          <div
+            class="product_card card_1 min-h-[360px] overflow-hidden rounded-[20px] px-6 pt-8 pb-4"
+            style="
+              background-image: url(https://champion.com.bd/img/9.png?imbypass=true);
+            "
+          >
+            <h3 class="text-2xl font-bold text-white lg:text-3xl">
+              Two Mega Pixel Full HD 1080P Web Camera
+            </h3>
+
+          </div>
+
+          <!-- Card 2: Galaxy S25 Ultra for Business -->
+          <div 
+            class="product_card relative overflow-hidden rounded-[20px] bg-[#4A4A4A] px-6 pt-8 pb-4"
+            style="
+              background-image: url(https://champion.com.bd/img/10.png?w=1276&amp;ssl=1);
+            "
+          >
+            <div class="card_content">
+              <h3 class="text-2xl font-bold text-white lg:text-3xl">
+                V380 Pro Night Vision C10 Dual-Lens Wi-Fi IP Camera
+              </h3>
+
+              
+            </div>
+          </div>
+
+          <div
+            class="product_card bsm:col-span-2 relative overflow-hidden rounded-[20px] bg-[#A8C5F3] px-6 pt-8 pb-4 md:col-span-1"
+            style="
+              background-image: url(https://champion.com.bd/img/11.png?resize=1140%2C570&amp;ssl=1);
+            "
+          >
+            <div class="card_content">
+              <h3 class="text-2xl font-bold text-white lg:text-3xl">
+                Champion USB Platform Barcode Scanner E9005
+              </h3>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- LifeOpens #BottomCard Section -->
+        <div style="display:none"
+  class="product_card relative overflow-hidden rounded-[20px] px-6 pt-8 pb-4"
+  style="background-color: #4A4A4A;"
+>
+  <!-- Video Background -->
+  <!-- <video
+    class="absolute top-0 left-0 w-full h-full object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source src="https://champion.com.bd/img/champion.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video> -->
+
+  <!-- Card Content -->
+  <div class="card_content relative z-10">
+    <h3 class="text-2xl font-bold text-white lg:text-3xl">
+      V380 Pro Night Vision C10 Dual-Lens Wi-Fi IP Camera
+    </h3>
+  </div>
+</div>
+
+      </div>
+    </section>
+
 
     <!-- #faq_sec section -->
     <section class="faq_sec bg-black py-10 text-white md:py-16 lg:py-24">
@@ -1103,90 +1230,14 @@ img {
       </div>
     </section>
 
-    <!-- lifeOpens_sec section -->
-    <section class="lifeOpens_sec bg-black py-10 md:py-16 lg:py-24 ">
-      <div class="container988">
-        <!-- Product Cards Row -->
-        <div
-          class="product_cards bsm:grid-cols-2 grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6"
-        >
-          <div
-            class="product_card card_1 min-h-[360px] overflow-hidden rounded-[20px] px-6 pt-8 pb-4"
-            style="
-              background-image: url(https://champion.com.bd/img/6.png?imbypass=true);
-            "
-          >
-            <h3 class="text-2xl font-bold text-white lg:text-3xl">
-              Two Mega Pixel Full HD 1080P Web Camera
-            </h3>
 
-          </div>
-
-          <!-- Card 2: Galaxy S25 Ultra for Business -->
-          <div
-            class="product_card relative overflow-hidden rounded-[20px] bg-[#4A4A4A] px-6 pt-8 pb-4"
-            style="
-              background-image: url(https://champion.com.bd/img/7.png?w=1276&amp;ssl=1);
-            "
-          >
-            <div class="card_content">
-              <h3 class="text-2xl font-bold text-white lg:text-3xl">
-                V380 Pro Night Vision C10 Dual-Lens Wi-Fi IP Camera
-              </h3>
-
-              
-            </div>
-          </div>
-
-          <div
-            class="product_card bsm:col-span-2 relative overflow-hidden rounded-[20px] bg-[#A8C5F3] px-6 pt-8 pb-4 md:col-span-1"
-            style="
-              background-image: url(https://champion.com.bd/img/8.png?resize=1140%2C570&amp;ssl=1);
-            "
-          >
-            <div class="card_content">
-              <h3 class="text-2xl font-bold text-white lg:text-3xl">
-                Champion USB Platform Barcode Scanner E9005
-              </h3>
-
-            </div>
-
-          </div>
-        </div>
-        <!-- LifeOpens #BottomCard Section -->
-        <div
-  class="product_card relative overflow-hidden rounded-[20px] px-6 pt-8 pb-4"
-  style="background-color: #4A4A4A;"
->
-  <!-- Video Background -->
-  <video
-    class="absolute top-0 left-0 w-full h-full object-cover"
-    autoplay
-    muted
-    loop
-    playsinline
-  >
-    <source src="https://champion.com.bd/img/champion.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- Card Content -->
-  <div class="card_content relative z-10">
-    <h3 class="text-2xl font-bold text-white lg:text-3xl">
-      V380 Pro Night Vision C10 Dual-Lens Wi-Fi IP Camera
-    </h3>
-  </div>
-</div>
-
-      </div>
-    </section>
     
-      <script>
+<script>
   const video = document.getElementById("bgVideo");
 
   const isDesktop = window.innerWidth >= 1000;
-  const webVideo = "champion.com.bd-web.mp4";      // 1920x1080
-  const mobileVideo = "champion.com.bd-mobile.mp4"; // 1080x1920
+  const webVideo = "1105-copy.mp4";      // 1920x1080
+  const mobileVideo = "1105 (1)-copy.mp4"; // 1080x1920
 
   video.src = isDesktop ? webVideo : mobileVideo;
 
@@ -1196,6 +1247,17 @@ img {
     video.play().catch(()=>{});
   });
 </script>
+
+<!-- <script>
+  const isDesktop = window.innerWidth >= 1000;
+  const image = document.querySelector(".banner-image");
+
+  const desktopImg = "champion-desktop.png";
+  const mobileImg = "champion-mobile.jpg";
+
+  image.src = isDesktop ? desktopImg : mobileImg;
+</script> -->
+
 
 
 <!-- GSAP core -->
@@ -1249,5 +1311,105 @@ document.addEventListener("scroll", function () {
   </body>
 
 
+<footer class="bg-gray-100 text-gray-600 mt-16 border-t border-gray-300 pt-10 px-5">
+  <div class="container mx-auto">
+    <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-sm pb-10">
 
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Champion IP Camera</h4>
+        <ul class="space-y-1">
+          <li>Triple Lens Camera</li>
+          <li>PTZ Camera</li>
+          <li>360 Degree Camera</li>
+          <li>Dome camera</li>
+          <li>Dual Lens Waterproof</li>
+          <li>Bullet Camera</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-2"> APPLIANCE</h4>
+        <ul class="space-y-1">
+          <li>Champion Adapter</li>
+          <li>Champion Monitor</li>
+          <li>BNC</li>
+          <li>Champion Memory Card</li>
+          <li>RJ45</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-2">PRINTER</h4>
+        <ul class="space-y-1">
+          <li>Thermal Pos Printer</li>
+          <li>Label Receipt Printer</li>
+          <li>Mobile Pos Printer</li>
+          <li>Label Receipt Printer</li>
+        </ul>
+        <h4 class="font-semibold text-gray-800 mb-2 mt-4 space-y-1">Barcode Scanner</h4>
+        <ul class="space-y-1">
+          <li>USB Platform</li>
+          <li>Laser Wireless Blutooth</li>
+          <li>Handheld 1D-2D Barcode Scanner</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-2">IP CAMERA</h4>
+        <ul class="space-y-1">
+          <li>Shop and Healthcare</li>
+        </ul>
+
+        <h4 class="font-semibold text-gray-800 mb-2 mt-4">v380</h4>
+        <ul class="space-y-1">
+          <li>Champion v380 camera</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-2">NETWORK SWITCH</h4>
+        <ul class="space-y-1">
+          <li>24 Port POE Switch</li>
+          <li>16 Port POE Switch</li>
+          <li>8 Port Gigabit Switch</li>
+          <li>4 Port POE Switch</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-300"></div>
+
+    <div class="w-full flex flex-col md:flex-row justify-between items-center text-xs py-6">
+
+      <p>© 2025 Your Company. All rights reserved.</p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-3 md:mt-0">
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-gray-800">Privacy Policy</a>
+          <span>|</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-gray-800">Terms of Use</a>
+          <span class="hidden sm:block">|</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-gray-800">Sales & Refunds</a>
+          <span>|</span>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-gray-800">Help</a>
+        </div>
+      </div>
+
+      <p class="mt-3 md:mt-0">Bangladesh</p>
+
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
 </html>

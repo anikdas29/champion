@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Champion</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow-x: hidden;
+                position: relative;
+            }
+            .video-section {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+            }
+            .scroll-video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: -1;
+                transform: translate(-50%, -50%);
+                background-size: cover;
+            }
+
+            .swiper {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #444;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <!--Video Section-->
+        <section class="video-section">
+            <video id="bgVideo" class="scroll-video" autoplay muted loop playsinline preload="auto"></video>
+        </section>
+        <script>
+            const video = document.getElementById("bgVideo");
+
+            const isDesktop = window.innerWidth >= 1000;
+            const webVideo = "1105-copy.mp4";      // 1920x1080
+            const mobileVideo = "1105 (1)-copy.mp4"; // 1080x1920
+
+            video.src = isDesktop ? webVideo : mobileVideo;
+
+            video.muted = true;
+            video.play().catch(() => {
+                video.setAttribute("muted", "");
+                video.play().catch(()=>{});
+            });
+        </script>
+
+
+        <section>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: {
+        releaseOnEdges: true, // মূল সেটিং
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+    </script>
+    </body>
+</html>
